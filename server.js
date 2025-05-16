@@ -9,8 +9,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * - Defines a single route handler for the root path (`/`) that responds with "Hello, world!".
  * - Starts the server and logs the URL to the console when ready.
  */
-var express_1 = require("express");
-var app = (0, express_1.default)();
+import express from 'express';
+var app = express();
 var port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 app.get('/', function (req, res) {
     res.send('Hello, world!');
