@@ -40,12 +40,12 @@
                     console.log(data);
                     document.getElementById('data').innerText = JSON.stringify(data);
                     //set the response url to the image tag
-                    const img = document.createElement('img');
+                    const img = document.getElementById('dogImage');
                     img.src = data[0].url;
                     img.alt = 'Dog Image';
                     img.style.width = '300px';
                     img.style.height = 'auto';
-                    document.body.appendChild(img);
+                    //document.body.appendChild(img);
                 })
                 .catch(error => console.error('Error fetching data:', error));
         }
@@ -69,11 +69,12 @@
     </script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" align="center">
         <h1>My API App</h1>
         <p>Click the buttons below to interact with the API:</p>
         <button onclick="fetchData()">Fetch Data</button>
         <button onclick="sendData()">Send Data</button>
         <pre id="data"></pre>
+        <img id="dogImage" src="" alt="Dog Image" style="display:block;"/>
     </div>
 </body>
