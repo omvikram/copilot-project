@@ -26,7 +26,7 @@
 //    - Hoisted to the top of their block, meaning they can be used before they are declared (but will be `undefined` until the declaration is reached).
 //    - Example:
 //     javascript
-     let y = 10;
+     var y = 10;
      console.log(y); // 10
      y = 20;
      console.log(y); // 20
@@ -38,7 +38,7 @@
 //    - Must be initialized at the time of declaration.
 //    - Example:
 //     javascript
-     const z = 10;
+     var z = 10;
      console.log(z); // 10
      z = 20; // TypeError: Assignment to constant variable.
      
