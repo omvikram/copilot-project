@@ -56,4 +56,4 @@ template_path: Path to the template folder.
 content_path: Path to the content folder.
 version: The version of the website.
 License
-MIT
+BHN

@@ -16,4 +16,4 @@ To generate the website output from this project:
 
 ## License
 
-MIT
+BHN
